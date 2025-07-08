@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>پروفایل من</title>
+  <title>My Profile</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <div class="profile-container">
-    <h2>پروفایل من</h2>
-    <div class="profile-photo">
-      <img id="profile-img" src="" alt="عکس پروفایل" />
+  <div class="w-[100%] h-[695px] bg-slate-950">
+    <div class="flex items-center justify-center flex-col">
+      <h2>My Profile</h2>
+      <div class="w-[230px] h-[230px] rounded-[50%] border-2 border-blue-500">
+        <img id="profile-img" src="" alt="Profile Photo" class="w-[100%] h-[100%] rounded-[50%]"/>
+      </div>
+      <div class="text-slate-50 flex flex-col ml-[110px] mt-[50px]">
+        <input type="file" id="image-input" accept="image/*" />
+      </div>
+      <div class="flex flex-col text-slate-50 mt-[20px]">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50"/>
+      </div>
+      <div class="flex flex-col text-slate-50 mt-[20px]">
+        <label for="id-input">User ID:</label>
+        <input type="text" id="id-input" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50"/>
+      </div>
+      <button id="edit-btn" class="w-[100px] h-[40px] bg-slate-50 rounded-[10px] mt-[30px]">Edit</button>
+      <button id="save-btn" class="w-[100px] h-[40px] bg-blue-600 rounded-[10px] text-slate-50 mt-[30px]" style="display:none;">Save</button>
     </div>
-
-    <label for="image-input">آپلود عکس:</label>
-    <input type="file" id="image-input" accept="image/*" />
-
-    <div>
-      <label for="name-input">نام:</label>
-      <input type="text" id="name-input" />
-    </div>
-
-    <div>
-      <label for="id-input">آیدی:</label>
-      <input type="text" id="id-input" />
-    </div>
-
-    <button id="edit-btn">ویرایش</button>
-    <button id="save-btn" style="display:none;">ذخیره</button>
   </div>
   <script src="./Profilepage.js"></script>
 </body>

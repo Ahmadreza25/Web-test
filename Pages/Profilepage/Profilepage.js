@@ -27,7 +27,7 @@ async function loadProfile() {
       setEditing(false);
     }
   } catch (err) {
-    console.error('خطا در بارگذاری پروفایل:', err);
+    console.error('Error loading profile:', err);
   }
 }
 
@@ -80,16 +80,16 @@ async function saveProfile() {
     });
 
     if (res.ok) {
-      alert('پروفایل با موفقیت ذخیره شد!');
+      alert('Profile saved successfully!');
       setEditing(false);
       loadProfile();
       imageInput.value = ''; 
     } else {
-      alert('خطا در ذخیره پروفایل');
+      alert('Error saving profile');
     }
   } catch (err) {
     console.error(err);
-    alert('خطا در ذخیره پروفایل');
+    alert('Error saving profile');
   }
 }
 

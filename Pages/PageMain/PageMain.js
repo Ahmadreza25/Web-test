@@ -32,5 +32,5 @@ document.getElementById('btn-profile').addEventListener('click' , e => {
 
 document.getElementById('btn-article').addEventListener('click' , e => {
     e.preventDefault()
-    window.location.href = ''
+    window.location.href = '../AddArticle/AddArticle.html'
 })

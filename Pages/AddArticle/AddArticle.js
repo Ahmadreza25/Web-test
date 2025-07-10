@@ -2,6 +2,7 @@ const imgArticle = document.getElementById('img-article')
 const inputImage = document.getElementById('image-article')
 const inputname = document.getElementById('name-article')
 const inputSubject = document.getElementById('name-subject')
+const dataTime = document.getElementById('data-time')
 const divText = document.getElementById('div-text') 
 const btnWriting = document.getElementById('btn-writing')
 const btnSave = document.getElementById('btn-save')
@@ -18,12 +19,14 @@ async function loadArticle () {
             imgArticle.src = data.image || ''
             inputname.value = data.title || ''
             inputSubject.value = data.name || ''
+            dataTime.value = data.time || ''
             divText.textContent = data.text || ''
             setEditing(false)
         }else{
             imgArticle.src = ''
             inputname.value = ''
             inputSubject.value = ''
+            dataTime.value =''
             divText.textContent = ''
             setEditing(false)
         }
@@ -39,7 +42,7 @@ function setEditing (state) {
     inputname.disabled = !state
     inputSubject.disabled = !state
     inputImage.disabled = !state
-
+    dataTime.disabled = !state
     if(state) {
         btnWriting.style.display = 'none'
         btnSave.style.display = 'inline-block'
@@ -72,6 +75,7 @@ async function saveArticle () {
             image:imageBase64,
             title:inputname.value,
             name:inputSubject.value,
+            time:dataTime.value,
             text:divText.textContent
         }
 

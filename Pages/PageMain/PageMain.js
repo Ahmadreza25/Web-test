@@ -9,6 +9,7 @@ const idH = document.getElementById('h-userid')
 const nameArticle = document.getElementById('name-article')
 const nameAuthor = document.getElementById('name-author')
 const dataTime = document.getElementById('data-time')
+const profilearticle = document.getElementById('image-article')
 
 window.addEventListener('DOMContentLoaded' , async () => {
     try{
@@ -34,6 +35,7 @@ window.addEventListener('DOMContentLoaded' ,async () => {
     nameArticle.textContent = user.name
     nameAuthor.textContent = user.title
     dataTime.textContent = user.time
+    profilearticle.src = user.image
   }catch (err){
 
   }

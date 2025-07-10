@@ -100,6 +100,44 @@ async function saveArticle () {
         alert('Error Article')
     }
 }
+const btnSendToServer = document.getElementById('btn-send-to-server');
+
+btnSendToServer.addEventListener('click', async () => {
+    try {
+        let imageBase64 = imgArticle.src;
+        
+        if (inputImage.files.length > 0) {
+            imageBase64 = await toBase64(inputImage.files[0]);
+        }
+        
+        const articleData = {
+            image: imageBase64,
+            title: inputname.value,
+            name: inputSubject.value,
+            time: dataTime.value,
+            text: divText.textContent
+        };
+        
+        const res = await fetch('http://localhost:3000/articles', {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(articleData)
+        });
+        
+        if (res.ok) {
+            alert('The information was successfully sent to the server.');
+            inputImage.value = ''; 
+            loadArticle();          
+        } else {
+            alert('Error sending information to the server.');
+        }
+    } catch (err) {
+        console.error('Error sending to server:', err);
+        alert('Error sending information to the server.');
+    }
+});
 
 btnWriting.addEventListener('click' , () => setEditing(true))
 btnSave.addEventListener('click' , saveArticle)

@@ -12,166 +12,241 @@
         <div class="w-[100%] h-[70px] bg-slate-900 flex items-center justify-between text-slate-50">
             <div class="flex items-center">
                 <div class="flex items-center">
-                    <div class="w-[50px] h-[50px] rounded-[50%] bg-slate-100 ml-10 flex items-center justify-center">
-                        <img src="" alt="" class="w-[100%] h-[100%] rounded-[50%]" id="h-img-profile">
+                    <div 
+                    class="w-[50px] h-[50px] rounded-[50%] bg-slate-100 ml-10 flex items-center justify-center 
+                    max-sm:w-[30px] max-sm:h-[30px] 
+                    "
+                    >
+                        <img src="" alt="" class="w-[100%] h-[100%]  rounded-[50%]" id="h-img-profile">
                     </div>
-                    <div class="ml-3">
-                        <h3 id="h-name">
+                    <div class="ml-3 max-sm:ml-1">
+                        <h3 id="h-name" class="text-[15px] max-sm:text-[10px]">
                         </h3>
-                        <h4 id="h-userid">
+                        <h4 id="h-userid" class="text-[15px] max-sm:text-[10px] text-slate-500">
                         </h4>
                     </div>
                 </div>
-                <div class="flex items-center ml-[50px]">
+                <div class="flex items-center ml-[50px] max-sm:flex-col max-sm:text-slate-300 
+                max-sm:ml-[10px]
+                ">
                     <div>
-                        <img src="../../imgs/support.png" alt="" class="w-[40px]">
+                        <img src="../../imgs/support.png" alt="" class="w-[40px] max-sm:w-[25px]">
                     </div>
-                    <h2 class="ml-1">
+                    <h2 class="ml-1 max-sm:text-[8px]">
                         Support 
                     </h2>
                 </div>
             </div>
             <div class="flex items-center">
-                <div class="mr-10">
+                <div class="mr-10 max-sm:hidden">
                     <input 
                     type="text"
                     placeholder="Search for ..."
                     class="w-[330px] h-[35px] pl-5 bg-slate-900 rounded-lg outline-none border-2 border-slate-600"
                      >
                 </div>
-                <div class="mr-10">
-                    <button>
+                <div class="mr-10 max-sm:mr-3">
+                    <button class="max-sm:text-[10px] max-sm:border-2 max-sm:border-slate-100 max-sm:w-[55px] max-sm:h-[25px] max-sm:rounded-[3px]">
                         Sign in
                     </button>
                 </div>
-                <div class="mr-10">
+                <div class="mr-10 max-sm:hidden">
                     <button class="w-[100px] h-[35px] border-2 border-slate-100 rounded-lg">
                         Sign Up
                     </button>
                 </div>
+                <div class="hidden  max-sm:inline-block">
+                    <img src="../../imgs/icons/icon-list.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <div class="flex justify-between mt-[50px]">
-        <div class="w-[450px] h-[700px] border-2 border-slate-100 rounded-[20px] flex items-center justify-center flex-col">
+    <div class="flex justify-between mt-[50px] max-sm:flex-col max-sm:justify-center max-sm:items-center
+    max-sm:w-[100%] max-sm:h-[900px]
+    ">
+        <div class="w-[450px] h-[700px] border-2 border-slate-100 rounded-[20px] flex items-center justify-center flex-col
+            max-sm:w-[350px] max-sm:h-[450px]
+        ">
             <div>
-                <h2 class="text-slate-50 -mt-10">
+                <h2 class="text-slate-50 -mt-10 text-2xl font-black
+                max-sm:text-[15px] max-sm:-mt-1
+                ">
                     Articles
                 </h2>
             </div>
-            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between">
-                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center ">
+            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between
+            max-sm:w-[350px] max-sm:m-0 max-sm:h-[70px]
+            ">
+                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center 
+                    max-sm:w-[40px] max-sm:h-[40px]
+                ">
                     <img src="../../imgs/img-1.jpg" alt="" class="w-[100%] h-[100%] rounded-[100%]">
                 </div>
-                <div class="w-[300px] h-100%">
-                    <p class="ml-5 text-slate-50">
+                <div class="w-[300px] h-100%"> 
+                    <p class="ml-5 text-slate-50 max-sm:text-[10px] max-sm:ml-[10px]">
                         The book "Strange Mood in Tokyo": Hope with Love
                     </p>
                 </div>
             </div>
-            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between">
-                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center">
+            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between
+            max-sm:w-[350px] max-sm:m-0 max-sm:h-[70px]
+            ">
+                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center
+                max-sm:w-[40px] max-sm:h-[40px]
+                ">
                     <img src="../../imgs/img-2.jpg" alt="" class="w-[100%] h-[100%] rounded-[100%]">
                 </div>
                 <div class="w-[300px] h-100%">
-                    <p class="ml-5 text-slate-50">
+                    <p class="ml-5 text-slate-50 max-sm:text-[10px] max-sm:ml-[10px]">
                         Notes from the book "Hamlet" by William Shakespeare
                     </p>
                 </div>
             </div>
-            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between">
-                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center">
+            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between
+            max-sm:w-[350px] max-sm:m-0 max-sm:h-[70px]
+            ">
+                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center
+                max-sm:w-[40px] max-sm:h-[40px]
+                ">
                     <img src="../../imgs/img-3.jpg" alt="" class="w-[100%] h-[100%] rounded-[100%]">
                 </div>
                 <div class="w-[300px] h-100%">
-                    <p class="ml-5 text-slate-50">
+                    <p class="ml-5 text-slate-50 max-sm:text-[10px] max-sm:ml-[10px]">
                         Review of the book "The Death of Ivan Ilyich" by Leo Tolstoy
                     </p>
                 </div>
             </div>
-            <div class="w-[400px] h-[120px] m-2 flex items-center justify-between">
-                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center">
+            <div class="w-[400px] h-[120px] m-2 flex items-center justify-between
+            max-sm:w-[350px] max-sm:m-0 max-sm:h-[70px]
+            ">
+                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center
+                max-sm:w-[40px] max-sm:h-[40px]
+                ">
                     <img src="../../imgs/img-4.jpg" alt="" class="w-[100%] h-[100%] rounded-[100%]">
                 </div>
                 <div class="w-[300px] h-100%">
-                    <p class="ml-5 text-slate-50">
+                    <p class="ml-5 text-slate-50 max-sm:text-[10px] max-sm:ml-[10px]">
                         The book "The Thirst for Fight": A Dystopia in Free Fall
                     </p>
                 </div>
             </div>
-            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between">
-                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center">
+            <div class="w-[400px] h-[100px] m-2 flex items-center justify-between
+            max-sm:w-[350px] max-sm:m-0 max-sm:h-[70px]
+            ">
+                <div class="w-[90px] h-[90px] rounded-[50%] bg-slate-900 ml-10 flex items-center justify-center
+                max-sm:w-[40px] max-sm:h-[40px]
+                ">
                     <img src="../../imgs/img-5.jpg" alt="" class="w-[100%] h-[100%] rounded-[100%]">
                 </div>
                 <div class="w-[300px] h-100%">
-                    <p class="ml-5 text-slate-50">
+                    <p class="ml-5 text-slate-50 max-sm:text-[10px] max-sm:ml-[10px]">
                         Facts about the life of James Baldwin
                     </p>
                 </div>
             </div>
         </div>
-        <div class="w-[950px] h-[700px] m-5 -mt-1 flex items-center justify-center flex-col">
+        <div class="w-[950px] h-[700px] m-5 -mt-1 flex items-center justify-center flex-col
+        max-sm:mt-[-80px] max-sm:w-[600px]
+        ">
             <div>
-                <img src="../../imgs/img-6.jpg" alt="" class="w-[900px] h-[400px] rounded-[20px]">
+                <img src="../../imgs/img-6.jpg" alt="" class="w-[900px] h-[400px] rounded-[20px]
+                max-sm:w-[450px] max-sm:h-[350px] max-sm:mt-[100px]
+                ">
             </div>
-            <div class="w-[900px] h-[280px] border-2 border-slate-100 mt-4 rounded-[10px] flex items-center justify-center">
-                <p class="text-slate-50 w-[700px]">
+            <div class="w-[900px] h-[280px] border-2 border-slate-100 mt-4 rounded-[10px] flex items-center justify-center
+                max-sm:w-[450px] max-sm:h-[150px]
+            ">
+                <p class="text-slate-50 w-[700px] max-sm:text-[10px] max-sm:text-center max-sm:p-10">
                     This site is a library site that provides a series of articles and books for free to its users. The goal of this site is to increase people's interest in books and increase people's access to books so that people can access the book they want at any time and anywhere.
                 </p>
             </div>
         </div>
     </div>
-    <div class="w-[100%] h-[700px] flex justify-around items-center mt-[50px]">
-        <div class="w-[400px] h-[550px] bg-slate-100 rounded-[20px] flex justify-center items-center flex-col">
+    <div class="w-[100%] h-[700px] flex justify-around items-center mt-[50px]
+    max-sm:flex-col max-sm:h-[1250px] max-sm:mt-[10px]
+    ">
+        <div class="w-[400px] h-[550px] bg-slate-100 rounded-[20px] flex justify-center items-center flex-col
+            max-sm:w-[250px] max-sm:h-[380px]
+        ">
             <h2 class="font-black">
                 my profile
             </h2>
-            <div class="w-[150px] h-[150px] rounded-[100%] bg-blue-600 flex items-center justify-center mt-[50px]">
-                <img src="" alt="" class="w-[100%] h-[100%] rounded-[50%]" id="img-profile">
+            <div class="w-[150px] h-[150px] rounded-[100%] bg-slate-900 flex items-center justify-center mt-[50px]
+            max-sm:w-[80px] max-sm:h-[80px] max-sm:rounded-[100%]
+            ">
+                <img src="" alt="" id="img-profile" class="w-[100%] h-[100%] rounded-[50%]">
             </div>
-            <div class="mt-[50px] text-[18px] font-bold">
+            <div class="mt-[50px] text-[18px] font-bold
+            max-sm:text-[12px]
+            ">
                 <h3 class="mt-4">
-                    Name :<span id="name" class="ml-[10px] text-[15px]"></span>
+                    Name :<span id="name" class="ml-[10px] text-[15px] max-sm:text-[10px]"></span>
                 </h3>
                 <h3 class="mt-4">
-                    My ID :<span id="userid" class="ml-[10px] text-[15px]"></span>
+                    My ID :<span id="userid" class="ml-[10px] text-[15px] max-sm:text-[10px]"></span>
                 </h3>
             </div>
             <div class="mt-10">
-                <button id="btn-profile" class="w-[120px] h-[40px] rounded-lg bg-blue-600 text-slate-50 mt-[30px]">
+                <button id="btn-profile" class="w-[120px] h-[40px] rounded-lg bg-blue-600 text-slate-50 mt-[30px]
+                max-sm:w-[80px] max-sm:h-[30px] max-sm:rounded-[3px] max-sm:text-[10px] max-sm:-mt-10
+                ">
                     Edit profile
                 </button>
             </div>
         </div>
-        <div class="w-[400px] h-[650px] bg-blue-600 rounded-[20px] flex items-center justify-center flex-col text-slate-50">
-            <h2 class="font-black -mt-10">
+        <div class="w-[400px] h-[650px] bg-blue-600 rounded-[20px] flex items-center justify-center flex-col text-slate-50
+        max-sm:w-[350px] max-sm:h-[450px]
+        ">
+            <h2 class="font-black -mt-10
+            max-sm:text-[13px]
+            ">
                 Add my article
             </h2>
             <div class="mt-10 flex items-center justify-center flex-col">
-                <div class="w-[150px] h-[150px] rounded-[20px] bg-blue-300">
-                    <img src="" alt="" id="image-article" class="w-100% rounded-[20px]" >
+                <div class="w-[150px] h-[150px] rounded-[20px] bg-blue-300
+                max-sm:w-[80px] max-sm:h-[80px] max-sm:rounded-[10px]
+                ">
+                    <img src="" alt="" id="image-article" class="w-100% rounded-[20px]
+                    max-sm:rounded-[10px]
+                    " >
                 </div>
-                <p class="mt-10">
-                    Name of the article : <span id="name-article"></span>
-                </p>
-                <p class="mt-10">
-                    Name of the author : <span id="name-author"></span>
-                </p>
-                <p class="mt-10">
-                    Date of the article : <span id="data-time"></span>
-                </p>
+                <div class="max-sm:mt-[50px]">
+                    <p class="mt-10
+                    max-sm:mt-4 max-sm:text-[12px]
+                    ">
+                        Name of the article : <span id="name-article"></span>
+                    </p>
+                    <p class="mt-10
+                    max-sm:mt-4 max-sm:text-[12px]
+                    ">
+                        Name of the author : <span id="name-author"></span>
+                    </p>
+                    <p class="mt-10
+                    max-sm:mt-4 max-sm:text-[12px]
+                    ">
+                        Date of the article : <span id="data-time"></span>
+                    </p>
+                </div>
             </div>
-            <div class="mt-[100px]">
-                <button class="w-[150px] h-[40px] rounded-lg text-blue-700 bg-slate-100" id="btn-article">
+            <div class="mt-[100px]
+            max-sm:mt-[40px]
+            ">
+                <button  id="btn-article" class="w-[150px] h-[40px] rounded-lg text-blue-700 bg-slate-100
+                    max-sm:w-[100px] max-sm:h-[30px] max-sm:rounded-[3px] max-sm:text-[10px] font-black
+                ">
                     Add my article
                 </button>
             </div>
         </div>
-        <div class="w-[400px] h-[550px] bg-slate-100 rounded-[20px] flex items-center justify-center flex-col">
+        <div class="w-[400px] h-[550px] bg-slate-100 rounded-[20px] flex items-center justify-center flex-col
+        max-sm:w-[250px] max-sm:h-[380px]
+        ">
             <h2 class="font-black">
                 Saved articles
             </h2>
-            <div class="w-[350px] h-[110px] m-1 flex items-center justify-between pl-2">
+            <div class="w-[350px] h-[110px] m-1 flex items-center justify-between pl-2
+            max-sm:text-[10px] max-sm:w-[250px]
+            ">
                 <div id="article-display"></div>
             </div>
         </div>

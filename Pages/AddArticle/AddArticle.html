@@ -14,30 +14,42 @@
       </style>
 </head>
 <body class="bg-slate-950">
-    <div class="w-[100%] h-[1800px] flex items-center justify-center flex-col bg-slate-950 mt-[0px]">
-        <h2 class="text-slate-50 text-4xl font-bold">
+    <div class="w-[100%] h-[1800px] flex items-center justify-center flex-col bg-slate-950 mt-[0px]
+    max-sm:h-[1300px]
+    ">
+        <h2 class="text-slate-50 text-4xl font-bold
+        max-sm:text-[15px]
+        ">
             Write your own article.
         </h2>
         <div>   
             <div class="flex items-center justify-center flex-col mt-[50px]">
-                <div class="w-[300px] h-[300px] rounded-[50%] bg-slate-500 flex items-center justify-center">
+                <div class="w-[300px] h-[300px] rounded-[50%] bg-slate-500 flex items-center justify-center
+                max-sm:w-[150px] max-sm:h-[150px] 
+                ">
                     <img src="" id="img-article" class="w-[100%] h-[100%] rounded-[50%]">
                 </div>
                 <div class="text-slate-50 mt-[30px]">
-                    <input type="file" accept="image/*" id="image-article"/>
+                    <input type="file" accept="image/*" id="image-article" class="max-sm:w-[250px] max-sm:text-[10px]"/>
                 </div>
             </div>
             <div class="mt-[60px] flex flex-col">
-                <label class="text-slate-50">Name of the author:</label>
-                <input type="text" id="name-article" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50 text-slate-50"/>
+                <label class="text-slate-50 max-sm:text-[13px]">Name of the author:</label>
+                <input type="text" id="name-article" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50 text-slate-50
+                max-sm:w-[200px] max-sm:text-[10px] max-sm:border-b-slate-300 max-sm:border-b-[1px]
+                "/>
             </div>
             <div class="mt-[60px] flex flex-col">
-                <label class="text-slate-50">The subject of the article:</label>
-                <input type="text" id="name-subject" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50 text-slate-50"/>
+                <label class="text-slate-50 max-sm:text-[13px]">The subject of the article:</label>
+                <input type="text" id="name-subject" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50 text-slate-50
+                max-sm:w-[200px] max-sm:text-[10px] max-sm:border-b-slate-300 max-sm:border-b-[1px]
+                "/>
             </div>
             <div class="flex flex-col mt-[60px]">
-                <label class="text-slate-50">Date of the article:</label>
-                <input type="text" id="data-time" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50 text-slate-50"/>
+                <label class="text-slate-50 max-sm:text-[13px]">Date of the article:</label>
+                <input type="text" id="data-time" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50 text-slate-50
+                max-sm:w-[200px] max-sm:text-[10px] max-sm:border-b-slate-300 max-sm:border-b-[1px]
+                "/>
             </div>
         </div>
         <div class="mt-[100px]">
@@ -45,19 +57,27 @@
                 <div 
                 id="div-text"
                 contenteditable="true"
-                class="w-[850px] h-[600px] border border-gray-800 p-4 overflow-y-auto rounded text-right rounded-[20px] bg-slate-700 text-slate-50"
+                class="w-[850px] h-[600px] border border-gray-800 p-4 overflow-y-auto rounded text-right rounded-[20px] bg-slate-700 text-slate-50
+                max-sm:w-[500px] max-sm:h-[400px] max-sm:text-[12px]
+                "
                 contenteditable="true">
                 </div>
             </div>  
         </div>
         <div>
-            <button id="btn-writing" class="w-[100px] h-[40px] bg-slate-50 mt-[50px] rounded-[10px]">
+            <button id="btn-writing" class="w-[100px] h-[40px] bg-slate-50 mt-[50px] rounded-[10px]
+            max-sm:w-[80px] max-sm:h-[30px] max-sm:text-[10px] max-sm:rounded-[5px] max-sm:bg-slate-50 max-sm:text-slate-900
+            ">
                 writing
             </button>
-            <button style="display: none;" id="btn-save" class="w-[100px] h-[40px] rounded-[10px] text-slate-50 bg-blue-600 mt-[50px]">
+            <button style="display: none;" id="btn-save" class="w-[100px] h-[40px] rounded-[10px] text-slate-50 bg-blue-600 mt-[50px]
+            max-sm:w-[80px] max-sm:h-[30px] max-sm:text-[10px] max-sm:rounded-[5px] max-sm:bg-blue-600 max-sm:text-slate-50
+            ">
                 save
             </button>
-            <button id="btn-send-to-server" class="w-[200px] h-[40px] bg-blue-600 text-slate-50 rounded-[10px]">Save the article</button>
+            <button id="btn-send-to-server" class="w-[200px] h-[40px] bg-blue-600 text-slate-50 rounded-[10px]
+            max-sm:w-[120px] max-sm:h-[30px] max-sm:text-[10px] max-sm:rounded-[5px] max-sm:bg-blue-600 max-sm:text-slate-50
+            ">Save the article</button>
 
         </div>
     </div>

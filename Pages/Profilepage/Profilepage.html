@@ -10,23 +10,37 @@
 <body>
   <div class="w-[100%] h-[695px] bg-slate-950">
     <div class="flex items-center justify-center flex-col">
-      <h2>My Profile</h2>
-      <div class="w-[230px] h-[230px] rounded-[50%] border-2 border-blue-500">
+      <h2 class="text-slate-50 m-[30px] font-bold text-[25px]
+      max-sm:text-[15px]
+      ">My Profile</h2>
+      <div class="w-[230px] h-[230px] rounded-[50%] border-2 border-blue-50
+      max-sm:w-[100px] max-sm:h-[100px]
+      ">
         <img id="profile-img" src="" alt="Profile Photo" class="w-[100%] h-[100%] rounded-[50%]"/>
       </div>
-      <div class="text-slate-50 flex flex-col ml-[110px] mt-[50px]">
+      <div class="text-slate-50 flex flex-col ml-[110px] mt-[50px]
+      max-sm:w-[250px] max-sm:text-[10px]
+      ">
         <input type="file" id="image-input" accept="image/*" />
       </div>
       <div class="flex flex-col text-slate-50 mt-[20px]">
-        <label for="name-input">Name:</label>
-        <input type="text" id="name-input" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50"/>
+        <label for="name-input" class="max-sm:text-[13px]">Name:</label>
+        <input type="text" id="name-input" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50
+        max-sm:w-[200px] max-sm:text-[10px] max-sm:border-b-slate-300 max-sm:border-b-[1px]
+        "/>
       </div>
       <div class="flex flex-col text-slate-50 mt-[20px]">
-        <label for="id-input">User ID:</label>
-        <input type="text" id="id-input" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50"/>
+        <label for="id-input" class="max-sm:text-[13px]">User ID:</label>
+        <input type="text" id="id-input" class="w-[300px] h-[30px] bg-slate-950 mt-[5px] outline-none border-b-2 border-b-slate-50
+        max-sm:w-[200px] max-sm:text-[10px] max-sm:border-b-slate-300 max-sm:border-b-[1px]
+        "/>
       </div>
-      <button id="edit-btn" class="w-[100px] h-[40px] bg-slate-50 rounded-[10px] mt-[30px]">Edit</button>
-      <button id="save-btn" class="w-[100px] h-[40px] bg-blue-600 rounded-[10px] text-slate-50 mt-[30px]" style="display:none;">Save</button>
+      <button id="edit-btn" class="w-[100px] h-[40px] bg-slate-50 rounded-[10px] mt-[30px]
+      max-sm:w-[80px] max-sm:h-[30px] max-sm:text-[10px] max-sm:rounded-[5px] max-sm:bg-slate-50 max-sm:text-slate-900
+      ">Edit</button>
+      <button id="save-btn" class="w-[100px] h-[40px] bg-blue-600 rounded-[10px] text-slate-50 mt-[30px]
+      max-sm:w-[80px] max-sm:h-[30px] max-sm:text-[10px] max-sm:rounded-[5px] max-sm:bg-blue-600 max-sm:text-slate-900
+      " style="display:none;">Save</button>
     </div>
   </div>
   <script src="./Profilepage.js"></script>

@@ -60,15 +60,16 @@ async function loadArticles() {
 
           articleElem.innerHTML = `
           <div class="w-[350px] h-[150px] m-1 flex items-center justify-between 
-          max-md:w-[300px]
+          max-md:w-[330px]
           ">
             <div class="w-[80px] h-[80px] rounded-[100%] bg-slate-100
             max-sm:w-[50px] max-sm:h-[50px]
+            max-md:w-[60px] max-md:h-[60px]
             ">
                 <img src="${latest.image}" alt="" class="rounded-[50%]">
             </div>
             <div class="w-[260px]
-              max-sm:w-[280px]
+              max-sm:w-[280px] max-md:w-[280px] max-md:ml-[30px]
             ">
                 <p class="w-[230px]">
                 Name of the article : ${latest.name}

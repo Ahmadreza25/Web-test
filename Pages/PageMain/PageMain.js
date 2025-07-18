@@ -49,11 +49,10 @@ async function loadArticles() {
           const articles = await res.json();
 
           if (articles.length === 0) {
-              container.textContent = 'مقاله‌ای برای نمایش وجود ندارد';
+              container.textContent = 'erorr artcle';
               return;
           }
 
-          // فقط آخرین مقاله را نمایش بده
           const latest = articles[articles.length - 1];
 
           const articleElem = document.createElement('div');
@@ -61,20 +60,26 @@ async function loadArticles() {
           articleElem.innerHTML = `
           <div class="w-[350px] h-[150px] m-1 flex items-center justify-between 
           max-md:w-[330px]
+          max-lg:w-[290px] max-lg:ml-[0px]
           ">
             <div class="w-[80px] h-[80px] rounded-[100%] bg-slate-100
             max-sm:w-[50px] max-sm:h-[50px]
             max-md:w-[60px] max-md:h-[60px]
+            max-lg:w-[60px] max-lg:h-[60px]
             ">
                 <img src="${latest.image}" alt="" class="rounded-[50%]">
             </div>
             <div class="w-[260px]
-              max-sm:w-[280px] max-md:w-[280px] max-md:ml-[30px]
+              max-sm:w-[280px] 
+              max-md:w-[280px] max-md:ml-[30px]
+              max-lg:w-[220px] max-lg:text-[12px]
             ">
-                <p class="w-[230px]">
+                <p class="w-[230px]
+                max-lg:w-[180px]
+                ">
                 Name of the article : ${latest.name}
                 </p>
-                <p>
+                <p max-lg:w-[180px]>
                 Date of registration : ${latest.time}
                 </p>
                 <span>write names : ${latest.title}</span>
